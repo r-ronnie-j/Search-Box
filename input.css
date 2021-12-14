@@ -1,0 +1,22 @@
+body {
+    background-color: white;
+}
+.searchDiv {
+    display:inline-block;
+    border: 2px solid black;
+    border-radius:5px;
+    max-width:80vw;
+}
+.search {
+    border: none;
+    height:25px;
+    outline: none;
+}
+.searchButton{
+    border-left:solid black 1px;
+    border-right:none;
+    border-top:none;
+    border-bottom:none;
+    height:25px;
+    cursor:pointer;
+}
