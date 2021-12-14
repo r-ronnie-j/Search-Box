@@ -18,7 +18,7 @@ chooseInput.forEach((element)=>{
         },100)
         if(!event.target.previousElementSibling.value){
             event.stopPropagation();
-            insertDiv= document.createElement('div');
+            let insertDiv= document.createElement('div');
             insertDiv.innerHTML="Please enter something to perform a search";
             event.target.parentElement.after(insertDiv)
             setTimeout(()=>{
