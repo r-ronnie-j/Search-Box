@@ -19,10 +19,11 @@ chooseInput.forEach((element)=>{
         if(!event.target.previousElementSibling.value){
             event.stopImmediatePropagation();
             let insertDiv= document.createElement('div');
+            insertDiv.style.display='inline-block'
             insertDiv.innerHTML="Please enter something to perform a search";
-            event.target.parentElement.after(insertDiv)
+            event.target.parentElement.parentElement.append(insertDiv)
             setTimeout(()=>{
-                insertDiv.hidden= true
+                insertDiv.remove()
             },1000)
         }
     })
